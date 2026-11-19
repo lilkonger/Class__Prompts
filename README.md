@@ -1,4 +1,5 @@
 🤖 Class Prompts
+
 Ready-to-use Copilot prompts and practice files for my classes
 Welcome! 👋 This repository holds the prompt handouts, practice data and class resources I use when I teach Microsoft Copilot. Bookmark it, grab what you need, and come back whenever you want to practise.
 
