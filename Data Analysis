@@ -1,2 +1,270 @@
 Prompts to be used for Data Analysis. 
-Before running prompts download the example xls document. 
+Before running prompts download the example xls document. (Meridian-Airport-Ops-Travel-FY26.xlsx)
+
+Copilot for Finance: Student Prompt Handout 
+
+Empower your workforce with Microsoft 365 Copilot Use Cases · Finance (Data Analysis) 
+
+Use this handout to follow along during the session and to try every prompt again afterwards. Each prompt is shown exactly as it is used in class, grouped by demo and by the app you run it in. Copy a prompt, paste it into Copilot, then review and refine the answer. 
+
+The scenario 
+
+You are on Rita Chen's regional finance team at Meridian Car Rental, a company that rents cars at 40 airports and is spending $48 million to switch 12 airport fleets to electric vehicles (EVs). Over Thanksgiving weekend, most of the chargers at Denver stopped working: customers waited up to two hours and 340 walked away. To keep customers moving, Meridian paid for partner cars, gas cars driven in from other cities, mobile charging trucks, overtime and customer compensation. The charging company may owe some of it back, but maybe not all. It is Monday morning and the steering committee meets Friday, including a decision on Phoenix. Your job: say what the weekend really cost, what can be recovered, where the budget stands, and what each Phoenix option is worth, with numbers you can defend. 
+
+Anatomy of a strong prompt 
+
+Element 
+
+Question it answers 
+
+Goal 
+
+What is the overall purpose? 
+
+Context 
+
+Who am I, what happened, what is at stake? 
+
+Expectations 
+
+What should good look like? 
+
+Source 
+
+What should it ground on? 
+
+Files referenced in the prompts 
+
+File 
+
+What it is 
+
+Meridian-Denver-Incident-Brief.docx 
+
+What happened, key numbers, timeline, what is confirmed, owners, decisions needed 
+
+Meridian-Go-Electric-Financials.xlsx 
+
+Program budget vs. actual, monthly spend, weekend cost log, Phoenix options, raw ledger export 
+
+Meridian-Agreements-and-Policies.docx 
+
+What VoltPoint must pay back, the Customer Promise, and the airport terms 
+
+Meridian-Finance-Memo.docx 
+
+The memo you create in Demo 3 
+
+Demo 1 · Copilot Chat: From generic to grounded 
+
+Part A: The weak prompt 
+
+Where: Microsoft 365 Copilot Chat, Web tab. 
+
+How do I calculate the cost of a service outage? 
+
+Part B: The strong prompt 
+
+Where: Microsoft 365 Copilot Chat, Web tab. 
+
+I work in finance at a car-rental company. Over a holiday weekend, an outage of our electric-vehicle chargers at a busy airport left customers waiting up to two hours, and hundreds left without a car. We paid for replacement cars, mobile charging, overtime, and customer compensation. Our charging vendor may have to reimburse some of it under our contract. 
+
+Give me a finance briefing that covers: 
+
+1. How to put a full cost on a service outage — which costs to include, which are easy to miss, and how to treat lost revenue. 
+
+2. How vendor cost-recovery claims usually work, and what evidence they need. 
+
+3. How to compare options for a go/no-go decision when the risk is uncertain. 
+
+Keep it practical. I'm briefing my finance manager this morning. 
+
+Part C: Ground it in your own data 
+
+Where: Microsoft 365 Copilot Chat, Work tab. 
+
+I'm on Meridian's regional finance team. 
+
+Based on our Denver incident brief and any related emails and Teams chats, give me everything with a financial impact: what happened, every cost mentioned (partner cars, gas cars, mobile charging, overtime, customer compensation), lost rentals, what's confirmed versus not confirmed about the cause, and who owns each workstream. Flag anything that is NOT yet verified. Use the dates and times in the incident brief for the timeline. 
+
+Part D: Keep it 
+
+Select Copilot Page to turn the answer into an editable workspace your team can build on together. 
+
+Demo 2 · Excel: What did the weekend really cost us? 
+
+Setup: open Meridian-Go-Electric-Financials.xlsx, go to the Budget vs Actual sheet and open Copilot. 
+
+Part A: Where does the budget really stand? 
+
+Where: Budget vs Actual sheet. 
+
+Summarize this program budget. What's the total estimate at completion versus budget? Which categories are over budget, by how much, and what would the picture look like if we didn't count the unused contingency? 
+
+Part B: What can we get back? 
+
+Where: Weekend Cost Log sheet. 
+
+Using the Weekend Cost Log, how much did the Denver weekend cost in direct costs, how much is VoltPoint likely to cover, what's disputed, and what can't be recovered at all? Explain why each item is or isn't recoverable. 
+
+Part C: Make it visual 
+
+Where: Copilot in Edit mode. 
+
+Create a new sheet called Finance Dashboard. Add a bar chart of Variance by Category from the Budget vs Actual table, a chart of Budget vs Actual by month from Monthly Spend, and a chart of weekend costs by Category split by whether VoltPoint is likely to cover them. Add slicers for Category. 
+
+Part D: Compare the Phoenix options 
+
+Where: Phoenix Options sheet. 
+
+On the Phoenix Options sheet, explain the three options in plain language: the risk-adjusted cost and the worst-case cost of each. Then change the chance of an outage for option A from 25% to 40% and tell me how the ranking changes. 
+
+Part E: Clean the raw ledger export 
+
+Where: GL Export sheet. 
+
+Clean up the GL Export sheet: standardize dates to yyyy-mm-dd and cost centers to upper case, convert amounts to numbers, standardize vendor names, remove blank rows, flag exact duplicate rows, and flag any row with a missing or invalid amount. Put the result in a new table called GL_Clean, and list what you changed. 
+
+Tip: review every flagged row before you accept the changes. Rows that look like duplicates may be separate daily invoices. 
+
+Demo 3 · Word: The finance memo 
+
+Part A: Draft 
+
+Setup: open a blank Word document and open Copilot in Edit mode. 
+
+Draft a one-page finance memo from Regional Finance to the VP of Airport Operations for Friday's steering committee. 
+
+It must include: 
+
+- The bottom line in three sentences. 
+
+- The Denver weekend: direct costs, what VoltPoint is likely to cover, what's disputed, and lost revenue — labelled as estimates. 
+
+- Where the program budget really stands, with and without the unused contingency. 
+
+- The three Phoenix options: risk-adjusted and worst-case cost for each. 
+
+- What we need to make the claim to VoltPoint, and the deadline. 
+
+- Two decisions we need from leadership. 
+
+Tone: clear, factual. Keep costs separate from lost revenue. Don't present one number where there's a range, and don't assume VoltPoint pays before its incident report confirms the cause. 
+
+Use /Meridian-Denver-Incident-Brief.docx and /Meridian-Agreements-and-Policies.docx. Weekend direct costs: $222,136 ($185,736 likely covered, $36,400 disputed), plus a $15,000 outage credit; lost revenue about $100,300. Program: $47.41M forecast against a $48.0M budget, with $1.2M of contingency unused. Phoenix options (risk-adjusted / worst case): A $80,000 / $320,000; B $103,800 / $205,000; C $200,000 / $200,000. 
+
+Part B: Refine inline 
+
+Where: select the Denver weekend section and open Copilot inline. 
+
+Turn the Denver weekend section into a table with these columns: Cost, Amount, Likely covered by VoltPoint?, Why. 
+
+Then save the document to OneDrive as Meridian-Finance-Memo.docx. 
+
+Demo 4 · PowerPoint: Steering-committee finance slides 
+
+Setup: open a new blank presentation, open Copilot, select the + button, choose Select brand and pick Meridian Car Rental. 
+
+Create four slides for the finance section of Friday's steering committee from /Meridian-Finance-Memo.docx: 
+
+1. Bottom line — what Denver cost, and what we can recover. 
+
+2. Where the program budget really stands. 
+
+3. The Phoenix options — risk-adjusted and worst-case cost. 
+
+4. Decisions needed. 
+
+Conclusion-style titles, minimal text, one chart comparing the three Phoenix options. 
+
+Demo 5 · Teams: What Finance needs from the meeting 
+
+Where: open the Denver Recovery Sync meeting chat, select Recap, then Copilot. 
+
+From this meeting, pull out everything with a financial impact: 
+
+1. Decisions that will create or change costs, and roughly what kind of cost. 
+
+2. Anything said about getting money back from VoltPoint. 
+
+3. Anything Finance has been asked for, with the owner and deadline. 
+
+4. Risks that could change the cost picture. 
+
+Demo 6 · Outlook: Brief the VP 
+
+Part A: Draft 
+
+Setup: select New mail, then Help me write (Draft with Copilot in some versions). 
+
+Draft a short email from me to Kyle Czernuszka, VP of Airport Operations, ahead of Friday's steering committee. It should: 
+
+- Give the direct cost of the Denver weekend, how much VoltPoint is likely to cover, and the lost revenue — labelled as estimates. 
+
+- Say that our program budget looks under only because contingency is unused. 
+
+- Give the risk-adjusted and worst-case cost of each Phoenix option in one line each. 
+
+- Flag that VoltPoint's payment depends on its incident report, and that the 18 chargers we could have reset may reduce it. 
+
+- List what Finance needs from Operations by Wednesday. 
+
+Tone: direct, clear. Under 170 words. Include a subject line. 
+
+Use /Denver Recovery Sync and /Meridian-Finance-Memo.docx. 
+
+Part B: Schedule with Copilot 
+
+Open the "Denver chargers — weekend outage" email thread, select Schedule with Copilot, then Insert. No prompt needed: Copilot proposes the meeting, attendees and agenda for you. 
+
+Demo 7 · Agents: Your standing finance team 
+
+Copilot Chat is the general support line; agents are the specialists it transfers you to, with deep expertise and the ability to act on your behalf. 
+
+Part A: Researcher 
+
+I work in finance at a car-rental company that's moving its airport fleets to electric vehicles. A charger outage over a holiday weekend cost us in replacement cars, mobile charging, overtime, customer compensation, and lost rentals. Produce a sourced finance intelligence report covering: 
+
+1. How companies account for and recover the cost of vendor-caused outages — what evidence holds up in a claim. 
+
+2. The real total cost of ownership of EV fleets in cold climates, including backup capacity. 
+
+3. Best practice for comparing go/no-go options under uncertainty, and presenting them to leadership. 
+
+4. Three concrete recommendations for our next two weeks. 
+
+Cite every source. Format as a briefing for my finance manager. 
+
+Part B: Analyst 
+
+Using /Meridian-Go-Electric-Financials.xlsx, give me a finance analysis of the Go Electric program after the Denver weekend. Specifically: 
+
+1. Budget — where are we over budget, by how much, and how much of it is Denver-related versus underlying? 
+
+2. Recovery — how much can we recover from VoltPoint, what's at risk, and what evidence do we need? 
+
+3. Phoenix — which option is cheapest on average, which is safest in the worst case, and how sensitive is the answer to the chance of an outage? 
+
+4. The two highest-value actions for Finance this week, with the numbers. 
+
+Format as a data-driven brief. Label every figure as Actual, Estimate, or Scenario. 
+
+Part C: Prompt Coach 
+
+Every month I write commentary on our program budget: for each category more than 5% over or under, I explain the cause, the amount, and whether it's one-time or ongoing. Help me write a reusable prompt that does this consistently using Microsoft 365 Copilot in Excel. 
+
+/Meridian-Go-Electric-Financials.xlsx 
+
+Part D: A custom agent, Meridian Finance Partner 
+
+Ask the agent each question separately. 
+
+The VP asks: "If VoltPoint pays us back, the Denver weekend cost us nothing, right?" Give me a 30-second answer with the numbers. 
+
+The CFO wants one number: what does the Phoenix decision cost us? Answer in one sentence. 
+
+Keep practicing 
+
+Remember the workflow from today: ground, prompt, review, refine. Start every prompt with your goal and context, tell Copilot what good looks like, and point it at the right source. Always check the numbers and citations before you share an answer. 
+
+Course: Empower your workforce with Microsoft 365 Copilot Use Cases (MS-4004). 
