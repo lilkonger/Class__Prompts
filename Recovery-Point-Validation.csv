@@ -1,0 +1,11 @@
+Server,Application,Business Critical,Recovery Point (ET),Backup Type,Verification Status,Verified On,Verification Notes,Recovery Point Objective,Objective Status,Business Impact Risk
+FINREP-PROD-01,Financial Reporting,Yes,2026-11-22 13:00,Incremental,Verified,2026-11-23,Test restore succeeded,24 hours,Within objective,Low
+FINREP-PROD-01,Financial Reporting,Yes,2026-11-18 1:00,Full,Verified,2026-11-21,Test restore succeeded,24 hours,Within objective,Low
+CUSTREC-SQL-01,Customer Records Database,Yes,2026-11-17 13:10,Incremental,Verified,2026-11-21,Test restore succeeded,24 hours,Objective missed,High
+CUSTREC-SQL-01,Customer Records Database,Yes,2026-11-17 1:10,Full,Verified,2026-11-21,Test restore succeeded,24 hours,Objective missed,High
+CUSTREC-SQL-01,Customer Records Database,Yes,2026-11-22 13:10,Incremental,Not available,,Job failed - no recovery point created,24 hours,Objective missed,High
+LOANSVC-APP-01,Loan Servicing Application,Yes,2026-11-22 13:20,Incremental,Not verified,,Validation scheduled for Nov 23,24 hours,At risk,Medium
+LOANSVC-APP-01,Loan Servicing Application,Yes,2026-11-19 13:20,Incremental,Verified,2026-11-21,Test restore succeeded,24 hours,Within objective,Medium
+HRPAY-APP-01,HR and Payroll Portal,No,2026-11-22 13:30,Incremental,Not verified,,Not yet scheduled,48 hours,Within objective,Low
+FILESHR-REG-01,Regional File Shares,No,2026-11-22 13:40,Incremental,Not verified,,Not yet scheduled,48 hours,Within objective,Low
+INTRANET-WEB-01,Intranet Web Server,No,2026-11-22 13:50,Incremental,Verified,2026-11-22,Automated check passed,72 hours,Within objective,Low
